@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build-react": "cd react_src; npm run build"
+    "build-react": "cd react_src; npm run build",
+    "watch-express": "nodemon node ./bin/watch",
+    "build-express": "node ./bin/build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -13,5 +15,8 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }

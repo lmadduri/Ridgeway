@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var www = require('./www');
+www(false, false);
