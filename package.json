@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build-react": "cd react_src; npm run build",
+    "install": "npm install; cd react_src; npm install",
     "watch-express": "nodemon node ./bin/watch",
     "build-express": "node ./bin/build"
+    "build-react": "cd react_src; npm run build",
+    "start-react": "cd react_src; npm run start"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
